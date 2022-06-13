@@ -17,7 +17,7 @@ weatherForm.addEventListener('submit', (e)=>{
     })
 })
 
-clickTime = () =>{
+const clickTime = () =>{
     const messageOne = document.querySelector('#time')
     const time = new Date()
     messageOne.textContent = time;
