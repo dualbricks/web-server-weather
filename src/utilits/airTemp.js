@@ -9,7 +9,7 @@ const airTemp = (time, callback) => {
                 return callback(body.message, {})
             }
             else if(body.items) {
-                callback(error, body.items[0].readings[1])
+                callback(undefined, body.items[0].readings[1])
             }
         } catch(error) {
             callback(error, {})
